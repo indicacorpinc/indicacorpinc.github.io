@@ -1,0 +1,170 @@
+/* HEADER */
+#header {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+#header::before {
+    background-image: url('../assets/minecraft-background-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #ccc;
+    background-position: center;
+    background-attachment: fixed;
+
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    filter: brightness(50%) saturate(120%);
+}
+
+#header > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Roboto Mono", arial, serif;
+}
+
+#header > div h1 {
+    font-weight: 400;
+    font-size: 8em;
+    color: #A851ED;
+}
+
+#header > div h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #27E6A9;
+    height: 10px;
+    width: 60%;
+}
+
+#header > div p {
+    font-size: 2em;
+}
+
+/* BODY */
+#body {
+    background: #F6EFFC;
+}
+
+#body .section-header {
+    height: 200px;
+    position: relative;
+
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+}
+
+#body .section-header > p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+
+    font-weight: 400;
+    font-size: 4em;
+    color: #A851ED;
+}
+
+#body .section-header > p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #27E6A9;
+    height: 5px;
+    width: 75%;
+}
+
+#body .section-body {
+    background-color: #A851ED;
+    padding: 25px;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", arial, serif;
+}
+
+#body .section-body img {
+    display: block;
+    margin: 0 auto 25px auto;
+    width: 90%;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px -3px rgba(0,0,0,0.75);
+}
+
+#body .section-body .col-header {
+    color: #F6EFFC;
+    font-size: 2em;
+}
+
+#body .section-body .col-body {
+    font-size: 1.2em;
+}
+
+#body .section-body .blocked-background {
+    background-color: #282C34;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    margin: 25px auto;
+}
+
+#body .section-body .avatar-container {
+    margin: 25px 0;
+    text-align: center;
+}
+
+#body .section-body .avatar-title {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#body .section-body .avatar {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    max-height: 200px;
+    width: auto;
+    margin: 0 auto;
+    cursor: help;
+}
+
+#body .section-body .avatar-head {
+    margin: 10px 0;
+}
+
+/* FOOTER */
+#footer {
+    height: 400px;
+    position: relative;
+    text-align: center;
+
+    -webkit-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.75);
+}
+
+#footer > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#footer > div p {
+    font-weight: 300;
+    font-size: 1.2em;
+}
